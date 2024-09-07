@@ -1,0 +1,139 @@
+* {
+    /* margin adalah ruang du sekitar border elemen */
+    margin: 0;
+    /* padding adalah ruang antara border elemen dan konten elemen */
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* ini pake tag body karena buat ganti font seluruh halaman webnya */
+    font-family: Poppins;
+}
+
+/* Display FLex */
+header {
+    /* di header mereka semua disatuin karena masuk tag header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding buat  memberikan ruang tambahan di sekitar konten elemen, berfungsi untuk memberikan kesan yang lebih lega pada tampilan sebuah halaman web.  */
+    padding: 20px;
+    background-color: rgb(0, 173, 98);
+    /* warna font nya */
+    color: rgb(5, 77, 19);
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: aqua;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    /* udah in line, nyatu sebaris gitu tapi ga ada jarak */
+}
+
+.nav ul li {
+    /* Ini yang ngebuat ada jarak */
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    /* hover untuk mouse interaktif (aslinya item trus dihover mouse jadi putih */
+    text-decoration: none;
+    color: white;
+}
+
+.contact-btn .btn {
+    /* Padding gini jadinya panjang 10 lebar 20 */
+    padding: 10px 20px;
+    background-color: green;
+    color: aliceblue;
+    text-decoration: none;
+    /* Jadi kaya lengkung gitu border nya*/
+    border-radius: 5px;
+}
+
+.contact-btn .btn:hover {
+    /* Padding gini jadinya panjang 10 lebar 20 */
+    padding: 15px 25px;
+    background-color: rgb(67, 203, 67);
+    color: aliceblue;
+    text-decoration: none;
+    /* Jadi kaya lengkung gitu border nya*/
+    border-radius: 5px;
+    transition: 0,5s;
+}
+/* Manggil id pake pager # */
+#Portofolio {
+    padding: 50px;
+    text-align: center;
+}
+
+#Portofolio h2 {
+    margin-bottom: 20px;
+    /* Jarak antara h2 dengan gallery (my project) */
+}
+
+.gallery {
+    /* manggil class pake titik. */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.Project {
+    /* Harus sama ama yang dihtml kecil gede nya  */
+    padding: 40px 10px;
+    background-color:  rgb(0, 173, 98);
+    border: 1px solid  rgb(0, 173, 98);
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.Project:hover {
+    /* Harus sama ama yang dihtml kecil gede nya  */
+    padding: 60px 20px;
+    background-color:  rgb(10, 107, 65);
+    border: 1px solid  rgb(0, 173, 98);
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+
+
+
+}
+
+#Contact {
+    background-color: black;
+    text-align: center;
+}
+
+#Contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Contact ul li {
+    font-size: 16px;
+    /* margin biar berjarak */
+    margin: 20px 0;
+}
+
+#Contact ul li a {
+    color: white
+}
+
+footer { 
+    text-align: center;
+}
+   
